@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in |MongoDB</title>
+    <link rel="icon" href="icons8-mongodb-16.png">
+
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+
+      .parent {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        overflow: hidden;
+      }
+
+      .leftside {
+        width: 25%;
+        height: 100vh;
+        display: flex;
+        overflow: hidden;
+        position:relative;
+      }
+
+      .rightside {
+        width: 75%;
+        height: 100vh;
+        display: flex;
+        overflow: hidden;
+        background-image: url("login_promo_desktop_v20240327.jpg");
+        background-size: cover;
+        background-position: right;
+        background-position-x: right;
+        background-repeat: no-repeat;
+        position:relative;
+      }
+
+      .text {
+        width: 300px;
+        height: 700px;
+        float: left;
+        margin-left: 50px;
+        margin-top: 50px;
+      }
+
+      .details {
+        color: white;
+        font-size: 23px;
+        line-height: 34px;
+        font-weight: bolder;
+        font-family: "Euclid Circular A";
+        margin-left: 30px;
+      }
+
+      .description {
+        color: white;
+        padding-left: 30px;
+        margin-top: 30px;
+        font-family: "Euclid Circular A";
+        font-size: large;
+      }
+
+      .description1{
+        color: white;
+        font-family: "Euclid Circular A";
+        padding-left:30px;
+        margin-top:30px;
+
+      }
+
+      .last_desc{
+        color: white;
+        font-family: "Euclid Circular A";
+        padding-left:30px;
+        margin-top:30px;  
+      }
+
+      .logo{
+        height:50px;
+        margin-top:45px;
+        margin-left:45px
+      }
+      
+      .account{
+    
+        
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 400;
+        font-family: "MongoDB Value Serif", "Times New Roman", serif;
+        color: rgb(0, 104, 74);
+        margin-top:130px;
+        margin-left: 50px;
+        position: fixed;
+    }
+    .account1{
+    
+    color: rgb(28, 45, 56);
+    font-size: 18px;
+    font-weight: bolder;
+    display: block;
+    text-align: start;
+    margin-top:190px;
+    margin-left:50px;
+    font-family: 'Euclid Circular A';
+    text-decoration: none;
+    position: fixed;
+}
+   .google{
+    width:300px;
+    height:50px;
+    background-color: whitesmoke;
+    margin-top:250px;
+    margin-left:45px;
+    position: fixed;
+    border-radius: 10px;
+   
+   }
+   .google {
+            display: flex;
+            align-items: center;
+        }
+        .google img {
+            padding-left:30%;
+        }
+        .google span {
+            text-align: start;
+            font-size: medium;
+            font-family: 'Euclid Circular A';
+            
+          }
+
+          .git{
+         width:300px;
+         height:50px;
+        background-color: whitesmoke;
+        margin-top:320px;
+        margin-left:45px;
+        position: fixed;
+        border-radius: 10px;
+          }
+
+          .git {
+            display: flex;
+            align-items: center;
+        }
+        .git img {
+            padding-left:30%;
+        }
+        .git span {
+            text-align: start;
+            font-size: medium;
+            font-family: 'Euclid Circular A';
+            
+        }
+
+            .centered-text {
+            display: flex;
+            text-align: center;
+            margin-top:400px;
+            margin-left:78px;
+            font-family: 'Euclid Circular A';
+            float:left;
+            position: fixed;
+            
+        }
+        .centered-text::before,
+        .centered-text::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid #ccc;
+        }
+        .centered-text:not(:empty)::before {
+            margin-right: .25em;
+        }
+        .centered-text:not(:empty)::after {
+            margin-left: .25em;
+        }
+          
+        .mail{
+            font-family: 'Euclid Circular A';
+            margin-top:450px;
+            margin-left:-180px;
+            font:bold;
+            font-size: medium;
+        }
+
+        .mailbox{
+          width:300px;
+          height:40px;
+          margin-top:490px;
+          margin-left:-120px;
+          border-radius:10px;
+        }
+        .btn{
+          width:100px;
+          height:50px;
+          margin-top:580px;
+          margin-left:-300px;
+        }
+
+        .btn:hover{
+          background-color:green;
+          color:white;
+          font:bolder;
+          border-radius:10px;
+        }
+      
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="leftside">
+
+       <img class = "logo"src="https://webimages.mongodb.com/_com_assets/cms/mongodb-logo-rgb-j6w271g1xn.jpg" alt="MongoDB">
+
+       <h2 class = "account">Log in to your account? </h2>
+
+       <h2 class = "account1">Do you have account?
+         <a target = "blank" href = "https://account.mongodb.com/account/register">
+            <span style = "color:#016ee9; text-decoration: none;">Sign Up </span></a></h2>
+
+
+            <button class="google">
+              <img src="icons8_google_48px.png" alt="Google Icon">
+              <span>Google</span>
+          </button>
+
+          <button class="git">
+            <img src="icons8_github_48px.png" alt="Git Icon">
+            <span>GitHub</span>
+        </button>
+        <div class="centered-text">Or with email and password</div>
+          
+
+           <br>
+
+        <span class = "mail"> Email Address</span> 
+        <input  class = "mailbox" type = "email" placeholder="Enter your email address">
+        <br>
+        <button class = "btn">Next</button>
+          
+        </div>
+      <div class="rightside">
+        <div class="text">
+          <h3 class="details">MongoDB.local is coming to a city near you!</h3>
+
+          <p class="description">
+            Enjoy technical deep-dives, one-on-one expert advice, and product
+            tutorials to elevate your skills.
+          </p>
+
+          <p class = "description1"> Enjoy a 50% discount with code WEB50. </p>
+
+         <p class = "last_desc"> 
+            <a target = "blank" href = "https://www.mongodb.com/events/mongodb-local?utm_campaign=local_2024&utm_source=website&utm_medium=cloud_login">
+             <span style="color: rgb(255, 255, 255);">   <u>View the schedule </u> →  </p> </span>
+         </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
